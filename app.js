@@ -6,9 +6,9 @@
   var DAY_MS = 24 * 60 * 60 * 1000;
   var LEVELS = { A1: 'Iniciante', A2: 'Básico', B1: 'Intermediário', B2: 'Avançado', C1: 'Proficiente' };
   var lessons = {
-    A1: { id: 'need-more-time', phrase: 'I need a little more time.', meaning: 'Eu preciso de um pouco mais de tempo.', choices: ['Eu preciso de um pouco mais de tempo.', 'Estou esperando há muito tempo.', 'Tenho muito tempo livre.'], word: 'a little more time' },
+        A1: { id: 'need-more-time', phrase: 'I need a little more time.', meaning: 'Eu preciso de um pouco mais de tempo.', choices: ['Estou esperando há muito tempo.', 'Eu preciso de um pouco mais de tempo.', 'Tenho muito tempo livre.'], word: 'a little more time' },
     A2: { id: 'ran-out-of-time', phrase: 'I ran out of time before the meeting.', meaning: 'Fiquei sem tempo antes da reunião.', choices: ['Cheguei cedo para a reunião.', 'Fiquei sem tempo antes da reunião.', 'A reunião durou pouco tempo.'], word: 'run out of time' },
-    B1: { id: 'usually-take-bus', phrase: 'I usually take the bus to work.', meaning: 'Geralmente vou de ônibus para o trabalho.', choices: ['Geralmente vou de ônibus para o trabalho.', 'Às vezes trabalho no ônibus.', 'Preciso pegar o ônibus depois do trabalho.'], word: 'usually' },
+        B1: { id: 'usually-take-bus', phrase: 'I usually take the bus to work.', meaning: 'Geralmente vou de ônibus para o trabalho.', choices: ['Às vezes trabalho no ônibus.', 'Geralmente vou de ônibus para o trabalho.', 'Preciso pegar o ônibus depois do trabalho.'], word: 'usually' },
     B2: { id: 'put-off-decision', phrase: 'The team put off the decision until Friday.', meaning: 'A equipe adiou a decisão até sexta-feira.', choices: ['A equipe tomou a decisão na sexta-feira.', 'A equipe adiou a decisão até sexta-feira.', 'A equipe discutiu a decisão por uma semana.'], word: 'put off' },
     C1: { id: 'remarkable-composure', phrase: 'She handled the feedback with remarkable composure.', meaning: 'Ela lidou com o feedback com notável serenidade.', choices: ['Ela deu um feedback bastante detalhado.', 'Ela lidou com o feedback com notável serenidade.', 'Ela recebeu a resposta com surpresa.'], word: 'composure' }
   };
