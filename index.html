@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="Pratique inglês todos os dias com uma rotina leve, revisão inteligente e exercícios de escuta e fala.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Fluency — seu inglês em movimento</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#today" aria-label="Fluency, início">
+        <span class="brand-mark" aria-hidden="true">f<span>.</span></span>
+        <span class="brand-copy"><strong>fluency</strong><small>ENGLISH LAB</small></span>
+      </a>
+      <nav class="nav-list">
+        <button class="nav-item is-active" data-view="today" type="button"><span class="nav-icon">◷</span><span>Meu dia</span></button>
+        <button class="nav-item" data-view="review" type="button"><span class="nav-icon">↻</span><span>Revisar</span><span class="nav-count" id="reviewCount">0</span></button>
+        <button class="nav-item" data-view="progress" type="button"><span class="nav-icon">▥</span><span>Progresso</span></button>
+      </nav>
+      <div class="sidebar-note"><span class="note-spark">✦</span><p>Um pouco de inglês, todos os dias.</p><small>Consistência vence intensidade.</small></div>
+      <div class="sidebar-profile"><span class="user-avatar" id="sideAvatar">MV</span><span><strong id="sideName">Seu espaço</strong><small id="sideLevel">Comece por você</small></span><button class="icon-button" id="settingsButton" type="button" aria-label="Editar seu perfil">···</button></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <a class="brand mobile-brand" href="#today" aria-label="Fluency, início"><span class="brand-mark">f<span>.</span></span><span class="brand-copy"><strong>fluency</strong><small>ENGLISH LAB</small></span></a>
+        <div class="topbar-right"><span class="today-label" id="todayLabel"></span><button class="avatar-button" id="profileButton" type="button" aria-label="Editar seu perfil">MV</button></div>
+      </header>
+      <div id="appView" class="view-container" tabindex="-1"></div>
+      <footer class="app-footer"><span>Feito para praticar, um dia de cada vez.</span><button type="button" id="resetButton">Reiniciar meus dados</button></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="profileModal" hidden>
+    <section class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <button class="modal-close icon-button" id="closeProfile" type="button" aria-label="Fechar">×</button>
+      <div class="eyebrow">SEU PLANO DE ESTUDO</div>
+      <h2 id="profileTitle">Vamos deixar isso com a sua cara.</h2>
+      <p>Escolha um ponto de partida. Você pode mudar depois.</p>
+      <form id="profileForm">
+        <label class="field-label" for="learnerName">Como podemos chamar você?</label>
+        <input id="learnerName" name="name" type="text" maxlength="32" placeholder="Seu nome" autocomplete="given-name">
+        <fieldset class="choice-fieldset"><legend>Qual nível parece mais próximo?</legend><div class="level-options">
+          <label><input type="radio" name="level" value="A1"><span>A1<small>Iniciante</small></span></label>
+          <label><input type="radio" name="level" value="A2"><span>A2<small>Básico</small></span></label>
+          <label><input type="radio" name="level" value="B1" checked><span>B1<small>Intermediário</small></span></label>
+          <label><input type="radio" name="level" value="B2"><span>B2<small>Avançado</small></span></label>
+          <label><input type="radio" name="level" value="C1"><span>C1<small>Fluente</small></span></label>
+        </div></fieldset>
+        <fieldset class="choice-fieldset"><legend>Quanto tempo por dia?</legend><div class="time-options">
+          <label><input type="radio" name="minutes" value="10"><span>10 min</span></label>
+          <label><input type="radio" name="minutes" value="15" checked><span>15 min</span></label>
+          <label><input type="radio" name="minutes" value="20"><span>20 min</span></label>
+        </div></fieldset>
+        <button class="primary-button full-width" type="submit">Salvar meu plano <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script>
+    if ('serviceWorker' in navigator) window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+  </script>
+</body>
+</html>
