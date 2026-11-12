@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f6f7f2">
-  <meta name="description" content="Pratique inglês todos os dias com uma rotina leve, revisão inteligente e exercícios de escuta e fala.">
+  <meta name="description" content="Pratique inglês escrevendo frases, receba correção imediata e revise com intervalos inteligentes.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Fluency — seu inglês em movimento</title>
@@ -12,7 +12,7 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <script src="writing-mode.js" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -29,7 +29,6 @@
       <div class="sidebar-note"><span class="note-spark">✦</span><p>Um pouco de inglês, todos os dias.</p><small>Consistência vence intensidade.</small></div>
       <div class="sidebar-profile"><span class="user-avatar" id="sideAvatar">MV</span><span><strong id="sideName">Seu espaço</strong><small id="sideLevel">Comece por você</small></span><button class="icon-button" id="settingsButton" type="button" aria-label="Editar seu perfil">···</button></div>
     </aside>
-
     <main class="main-area">
       <header class="topbar">
         <a class="brand mobile-brand" href="#today" aria-label="Fluency, início"><span class="brand-mark">f<span>.</span></span><span class="brand-copy"><strong>fluency</strong><small>ENGLISH LAB</small></span></a>
@@ -39,7 +38,6 @@
       <footer class="app-footer"><span>Feito para praticar, um dia de cada vez.</span><button type="button" id="resetButton">Reiniciar meus dados</button></footer>
     </main>
   </div>
-
   <div class="modal-backdrop" id="profileModal" hidden>
     <section class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
       <button class="modal-close icon-button" id="closeProfile" type="button" aria-label="Fechar">×</button>
@@ -54,7 +52,7 @@
           <label><input type="radio" name="level" value="A2"><span>A2<small>Básico</small></span></label>
           <label><input type="radio" name="level" value="B1" checked><span>B1<small>Intermediário</small></span></label>
           <label><input type="radio" name="level" value="B2"><span>B2<small>Avançado</small></span></label>
-          <label><input type="radio" name="level" value="C1"><span>C1<small>Fluente</small></span></label>
+          <label><input type="radio" name="level" value="C1"><span>C1<small>Proficiente</small></span></label>
         </div></fieldset>
         <fieldset class="choice-fieldset"><legend>Quanto tempo por dia?</legend><div class="time-options">
           <label><input type="radio" name="minutes" value="10"><span>10 min</span></label>
