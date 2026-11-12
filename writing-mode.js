@@ -217,7 +217,7 @@
     ["C1","Ele apresentou uma avaliação equilibrada, reconhecendo tanto os avanços quanto as falhas.","He offered a balanced assessment, acknowledging both the progress and the shortcomings."],
     ["C1","A questão central é se os benefícios compensam os riscos envolvidos.","The central question is whether the benefits outweigh the risks involved."],
     ["C1","A política entrou em vigor antes que os órgãos responsáveis estivessem preparados.","The policy took effect before the responsible agencies were prepared."],
-    ["C1","A autora argumenta que a linguagem usada para descrever o problema influencia as soluções propostas.","The author argues that the language used to describe the problem shapes the proposed solutions."]
+    ["C1","A autora argumenta que a linguagem usada para descrever o problema influencia as soluções propostas.","The author argues that the language used to describe the problem shapes the proposed solutions."],
     ["A1","Eu tenho um cachorro pequeno.","I have a small dog."],
     ["A1","Nós estamos em casa.","We are at home."],
     ["A1","Ela é minha professora.","She is my teacher."],
