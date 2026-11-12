@@ -1,0 +1,19 @@
+{
+  "name": "English Fluency AI",
+  "short_name": "Fluency",
+  "description": "Prática diária de inglês com revisão espaçada, escuta e fala.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f7f4",
+  "theme_color": "#39403a",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
